@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد كلمات المرور</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مولد كلمات المرور</h1>
+
+        <!-- صفحة كلمات المرور الصعبة -->
+        <div class="section">
+            <h2>كلمات مرور صعبة</h2>
+            <select id="difficulty-hard">
+                <option value="small">صغيرة</option>
+                <option value="medium">متوسطة</option>
+                <option value="large">كبيرة</option>
+            </select>
+            <button onclick="generatePassword('hard')">توليد كلمة مرور</button>
+            <p id="hard-password"></p>
+        </div>
+
+        <!-- صفحة كلمات المرور المتوسطة -->
+        <div class="section">
+            <h2>كلمات مرور متوسطة</h2>
+            <select id="difficulty-medium">
+                <option value="small">صغيرة</option>
+                <option value="medium">متوسطة</option>
+                <option value="large">كبيرة</option>
+            </select>
+            <button onclick="generatePassword('medium')">توليد كلمة مرور</button>
+            <p id="medium-password"></p>
+        </div>
+
+        <!-- صفحة كلمات المرور السهلة -->
+        <div class="section">
+            <h2>كلمات مرور سهلة</h2>
+            <select id="difficulty-easy">
+                <option value="small">صغيرة</option>
+                <option value="medium">متوسطة</option>
+                <option value="large">كبيرة</option>
+            </select>
+            <button onclick="generatePassword('easy')">توليد كلمة مرور</button>
+            <p id="easy-password"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
